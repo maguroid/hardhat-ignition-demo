@@ -1,7 +1,5 @@
 {
-  "MockSwapper#MockSwapper": "0x610178da211fef7d417bc0e6fed39f05609ad788",
-  "UniswapV3Swapper#UniswapV3Swapper": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e",
-  "Vault#mock_usdc": "0xa51c1fc2f0d1a1b8494ed1fe312d7c3a78ed91c0",
-  "Vault#uniswapV3_usdc": "0x0dcd1bf9a1b36ce34237eeafef220932846bcd82",
-  "Vault#uniswapV3_weth": "0x9a676e781a523b5d0c0e43731313a708cb607508"
+  "MockSwapper#MockSwapper": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "UniswapV3Swapper#UniswapV3Swapper": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+  "Vault#VaultFactory": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0"
 }
