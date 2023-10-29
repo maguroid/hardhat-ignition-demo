@@ -1,66 +1,59 @@
-## Foundry
+# hardhat ignition demo
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This is a demo of the [Hardhat Ignition](https://hardhat.org/ignition/docs/getting-started#overview), a tool that allows you to easily deploy and interact with smart contracts in a declarative way.
 
-Foundry consists of:
+## Prerequisites
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- [hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#installation)
+- [hardhat-ignition](https://hardhat.org/ignition/docs/getting-started#installation)
 
-## Documentation
+## Install dependencies
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```bash
+npm install
 ```
 
-### Test
+## Deploy to local node
 
-```shell
-$ forge test
+### Deploy vaults
+
+```bash
+make localnode
+make deploy/vaults/localhost:
 ```
 
-### Format
+### See the result
 
-```shell
-$ forge fmt
+```bash
+make visualize
 ```
 
-### Gas Snapshots
+deployed contract addresses are saved in `ignition/deployments/{chain_name}/deployed_addresses.json` file.
 
-```shell
-$ forge snapshot
+this will open a browser window with the visualization of the deployed contracts.
+
+![Alt text](assets/visualized-deployment.png)
+
+## Deploy to Sepolia testnet
+
+### Setup env file
+
+```bash
+cp .env.example .env
 ```
 
-### Anvil
+then fill in the `SEPOLIA_RPC_URL` and `PRIVATE_KEY` variables.
 
-```shell
-$ anvil
+[!WARNING]: do not commit the `.env` file to the repository, it would results to get your account drained.
+
+### Deploy vaults
+
+```bash
+make deploy/vaults/sepolia
 ```
 
-### Deploy
+### See the result
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+make visualize
 ```

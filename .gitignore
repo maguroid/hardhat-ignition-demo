@@ -6,18 +6,9 @@ typechain
 typechain-types
 
 # Hardhat files
-cache
+cache_hardhat
 artifacts
 
-
-node_modules
-.env
-coverage
-coverage.json
-typechain
-typechain-types
-
-# Hardhat files
+# foundry
 cache
-artifacts
-
+out

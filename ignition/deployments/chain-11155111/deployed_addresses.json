@@ -1,0 +1,7 @@
+{
+  "MockSwapper#MockSwapper": "0x6c548727abe835a1eb22b011b0bc844ecf6a1aac",
+  "UniswapV3Swapper#UniswapV3Swapper": "0x3bfb251ed35c0eeac409f4026f20cb575a5c631f",
+  "Vault#mock_usdc": "0x7812889ca5eb6e7167c37532ff89a22adf5ebe5b",
+  "Vault#uniswapV3_usdc": "0xf6826d886c871d8fc35147880087f16b3381836f",
+  "Vault#uniswapV3_weth": "0xffe89e4fd404f47d0dab1a659a4a38b48f7aa7af"
+}
