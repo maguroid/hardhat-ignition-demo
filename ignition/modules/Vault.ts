@@ -5,6 +5,8 @@ import VaultFactory from './VaultFactory'
 
 // * NOTES: deployment with factory currently not working as expected.
 // *        deployed address not stored in json file.
+// *
+// *        issue: https://github.com/NomicFoundation/hardhat-ignition/issues/607
 export default buildModule('Vault', (m) => {
   const { vaultFactory } = m.useModule(VaultFactory)
   const { uniswapV3Swapper } = m.useModule(UniswapV3Swapper)
