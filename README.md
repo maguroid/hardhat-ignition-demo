@@ -44,7 +44,8 @@ cp .env.example .env
 
 then fill in the `SEPOLIA_RPC_URL` and `PRIVATE_KEY` variables.
 
-[!WARNING]: do not commit the `.env` file to the repository, it would results to get your account drained.
+> [!WARNING]
+> do not commit the `.env` file to the repository, it would results to get your account drained.
 
 ### Deploy vaults
 
